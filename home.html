@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enigma</title>
+    <title>ENIGMA</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     
+    
+    <section class="header">
+        <video autoplay loop muted plays-inline src="./images/bgvideo.mp4" class="bg-video"></video>
+
+
+        <!-- ********************************************  NAVBAR  ******************************************** -->
+
+        <nav>
+           
+            
+            <div class="name"><p>CSI SIESGST</p></div>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="#sec1">HOME</a></li>
+                <li><a href="#sec2">ABSTRACT</a></li>
+                <li><a href="#sec3">SCHEDULE</a></li>
+                <li><a href="#sec4">RULES</a></li>
+                <li><a href="#sec5">REGISTER</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+   <!-- ********************************************  HERO  ******************************************** -->
+    <div class="text-box">
+        <h1>ENIGMA</h1>
+    </div>
+
+    </section>
+    
+
+        <!-- ********************************************  ABSTRACT  ******************************************** -->
+        <div class="abstract-container">
+            <div class="left-abs">
+                <h2>
+                    What is Enigma?
+                </h2>
+                <hr>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem eum ab officiis sequi quae error vitae. Officiis et pariatur nihil, doloribus perspiciatis deleniti vero voluptatem dolor delectus atque culpa ab, recusandae numquam dolore vitae facilis provident! Labore eveniet nam velit adipisci aperiam eum amet quas iusto suscipit ut aliquam distinctio, eligendi, iste expedita ex cupiditate perferendis?
+                </p>
+            </div>
+            <div class="right-abs">
+                <img src="./images/data privacy.png" alt="" class="data-privacy">
+            </div>
+        </div>
+
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
 </body>
 </html>
