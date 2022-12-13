@@ -169,10 +169,11 @@ background-color:  #121212;
  /* ********************************************  MEDIA QUERY  ********************************************  */
 
 
-@media(max-width: 700px){
+ @media (max-width: 767.98px){
     .text-box h1{
         font-size:30px;
     }
+
     .nav-links ul li{
         display:block;   
     }
@@ -205,6 +206,22 @@ background-color:  #121212;
         cursor: pointer;
     }
 
+    .abstract-container{
+        
+    }
+
+    .left-abs h2{
+       
+    }
+
+    .left-abs p{
+     
+    }
+
+    .right-abs img{
+     
+    }
+   
 }
 
 
