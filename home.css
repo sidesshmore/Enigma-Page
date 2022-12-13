@@ -25,8 +25,8 @@ body{
     /* width:100%; */
     /* background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://st3.depositphotos.com/1084193/17793/v/600/depositphotos_177937076-stock-illustration-neural-network-concept-connected-cells.jpg"); */
     /* background-position: center; */
-    /* background-size: cover; */
     /* position:relative; */
+    /* background-size: cover; */
 }
 
 
@@ -142,6 +142,7 @@ background-color:  #121212;
     border: 1px solid gray;
     text-align: left;
     margin-bottom: 10px;
+    width: 95%;
     
 }
 
@@ -159,7 +160,7 @@ background-color:  #121212;
 
 .right-abs img{
     height: 275px;
-    width: 450px;
+    /* width: 450px; */
 }
 
 
@@ -169,7 +170,12 @@ background-color:  #121212;
  /* ********************************************  MEDIA QUERY  ********************************************  */
 
 
- @media (max-width: 767.98px){
+ @media (min-width: 576px) and (max-width: 767.98px){
+
+    .header{
+        max-width: 400px;
+    }
+
     .text-box h1{
         font-size:30px;
     }
@@ -207,20 +213,30 @@ background-color:  #121212;
     }
 
     .abstract-container{
-        
+        flex-flow: row wrap;
     }
 
     .left-abs h2{
-       
+        margin-bottom: 5px;
     }
 
     .left-abs p{
-     
+        display: block;
+        width: 100%;
     }
 
     .right-abs img{
-     
+        display: block;
+        width: 100%;
+        height: 200px;
+        position:absolute;
+        
     }
+
+    /* .bg-video{
+        height: 100vh;
+        position: absolute;
+    } */
    
 }
 
@@ -231,6 +247,7 @@ background-color:  #121212;
     right: 0;
     bottom: 0;
     z-index: -1;
+    overflow-x: hidden;
 }
 
 @media(min-aspect-ratio:16/9)
