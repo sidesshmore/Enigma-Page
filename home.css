@@ -119,8 +119,8 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 /* margin: 0 10% 0 10%; */
-padding-top: 5%;
-height: 400px;
+/* padding-top: 5%; */
+height: 300px;
 background-color:  #121212;
 }
 
